@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting App</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./Counting.js"></script>
+</head>
+
+<body>
+    <div class="constainer">
+        <h1>Counting App</h1>
+        <div class="form-control">
+            <form action="/" onsubmit="handleSubmit()">
+                <label for="totalNumber">Count Number</label>
+                <input type="number" name="totalNumber" id="totalNumber" required>
+                <label for="stopNumber">Stop Number</label>
+                <input type="number" name="stopNumber" id="stopNumber">
+                <label for="dropdown">Select</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="even">Even</option>
+                    <option value="odd">Odd</option>
+                </select>
+                <button type="submit">Count</button>
+            </form>
+            <div class="output"></div>
+        </div>
+    </div>
+</body>
+
+</html>
