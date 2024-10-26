@@ -27,6 +27,7 @@ function handleSubmit() {
   output[0].innerHTML = count.length;
 }
 
+// looping through an array and break at certain point
 function loopOverArray() {
   let randomArray = [3, 2, 5, 1, 4];
   let sum = 0;
@@ -38,6 +39,7 @@ function loopOverArray() {
 }
 // loopOverArray();
 
+// count timer skip number
 function countTimer() {
   for (let i = 10; i >= 1; i--) {
     if (i == 5) continue;
@@ -46,3 +48,24 @@ function countTimer() {
   }
 }
 countTimer();
+
+// counting between two numbers 
+
+function countNumbers(start, end) {
+  let count = 0;
+  if (start > end) {
+    for (let i = start; i >= end; i--) {
+      console.log("i-", i);
+      count++
+    }
+  } else {
+    for (let i = start; i <= end; i++) {
+      console.log("i-", i);
+      count++
+    }
+  }
+  console.log("count",count)
+  return count;
+}
+
+console.log("counter--",countNumbers(5,8))
